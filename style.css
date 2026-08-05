@@ -10,7 +10,10 @@ body{
     font-family: "Sora", sans-serif;
 }
 nav{
+    height: 20vh;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .logo img{
@@ -39,9 +42,6 @@ ul li a{
 }
 #hc{
     color: #F2F8F9;
-}
-.butn{
-    margin-top: 20px;
 }
 .butn button{
     border: none;
@@ -76,8 +76,7 @@ ul li a{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 60vh;
-    margin-top: 50px;
+    height: 50vh;
 }
 .p-title p{
     font-size: 64px;
@@ -122,18 +121,22 @@ ul li a{
 /* second page */
 .second{
     height: 30vh;
-    margin-left: 20px; 
+    width: 100%;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
 }
 .sp-title p{
     height: 50px;
-    width: 100%;
+    width: 80%;
     color: #F2F8F9;
     font-size: 56px;
     font-weight: bold;
 }
 .sp-content p{
-    height: 165px;
-    width: 100%;
+    height: 100px;
+    width: 80%;
     color: #BBB6C4;
     font-size: 24px;
     margin-top: 20px;
@@ -147,13 +150,15 @@ ul li a{
     gap: 50px;
 }
 .lottery{
-    height: 341px;
+    margin-top: 5px;
+    height: 350px;
     width: 330px;
     border-radius: 24px;
     border: #F2F8F9 solid 1px;
     
 }
 .logo{
+    align-items: center;
     display: flex;
     justify-content: space-around;
 }
@@ -166,7 +171,7 @@ ul li a{
     width: 40px; 
 }
 .lottery p{
-    margin-left: 240px;
+    margin-left: 230px;
     color: #E17773;
     font-size: 8px;
 }
@@ -180,7 +185,7 @@ ul li a{
 }
 .l-button button{
     height: 42px;
-    width: 162px;
+    width: 150px;
     border: solid 1px #BBB6C4 ;
     border-radius: 24px;
     color: #362850;
@@ -193,24 +198,32 @@ ul li a{
 .l-button button:last-child{
     background-color: #E17773;
 }
-
-/* .list{
+/* 
+.list{
     display: flex;
+    justify-content: center;
 }
 
 .list ul li{
     color: #E17773;
-    font-size: 30px;
+    display: inline;
+    font-size: 80px;
 
 }
 .list ul{
+    list-style: circle;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
-.list ul li:first-child::marker {
+.list :first-child {
     color: #E17773;
 }
-.list ul li:nth-child(2)::marker {
+.list ul{
+    color: #D9D9D9;
+} */
+/* .list ul li:nth-child(2)::marker {
     color: #E17773;
 }
 .list ul li:nth-child(4)::marker {
@@ -218,14 +231,13 @@ ul li a{
 }
 .list ul li:nth-child(5)::marker {
     color: #D9D9D9;
-} */
+}  */
 
 /* staking and seed funding page */
 
 .seed{
     display: flex;
     justify-content: space-around;
-   
     align-items: center;
     height: 90vh;   
 }
@@ -293,6 +305,12 @@ ul li a{
 }
 .learn-img img{
     filter: drop-shadow(0  0.75rem #4B0093); 
+}
+.learn-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .learn-title p{
     height: 71px;
@@ -423,13 +441,16 @@ ul li a{
 /* footer */
 
 footer{
+    height: 70vh;
   background: #0f091b;
 background: linear-gradient(to bottom, rgb(8, 0, 12) 45%, rgba(10, 19, 49, 0.94) 95%);
+}
+.logo-b{
+
 }
 .logo-b img{
     height: 47px;
     width: 155px;
-    margin-left: 145px;
 }
 .flex-content{
     color: #848895;
@@ -487,8 +508,9 @@ input[type=search]{
 
 
 nav{
+    height: 40vh;
+    gap: 10px;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;  
@@ -498,7 +520,6 @@ nav{
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    
 }
 ul{
     display: flex;
@@ -521,6 +542,7 @@ ul{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;   
+    height: 70vh;
 }
 .p-title p{
     font-size: 20px;
@@ -545,11 +567,15 @@ ul{
     height: 416px;
     width: 100%;
 }
+
 /* second page */
 .second{
-    margin-top: 40px;
-    height: 30vh;   
-    gap: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 25vh; 
+    margin-left: auto;  
 }
 .sp-title p{
     color: #F2F8F9;
@@ -572,6 +598,7 @@ ul{
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    height: 150vh;
 }
 .lottery{
     height: 320px;
@@ -625,7 +652,7 @@ ul{
 
 .seed{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     height: 60vh;   
@@ -636,17 +663,24 @@ ul{
     filter: drop-shadow(0 0 0.75rem #4B0093);
 }
 .seed-title p{
+    text-align: center;
     height: 40px;
-    width: 250px;
+    width: 100%;
     font-size: 30px;
     font-weight: bold;
     color: #F2F8F9;
 }
 .seed-content p{
+    text-align: center;
     color: #BBB6C4;
     height: 70px;
-    width: 280px;
+    width: 100%;
     font-size: 15px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* border radius */
@@ -677,15 +711,16 @@ ul{
     color: #FFFFFF;
     font-size: 24px;
 }
+
 /* dao and learn to earn page */
 
 .learn{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
     height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .learn-img img{
     height: 200px;
     width: 300px;
@@ -693,16 +728,36 @@ ul{
 }
 .learn-title p{
     height: 40px;
-    width: 140px;
+    width: 100%;
     font-size: 20px;
     font-weight: bold;
     color: #F2F8F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .learn-content p{
+    text-align: center;
     color: #BBB6C4;
     height: 70px;
     width: 100%;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-4{
+    display: flex;
+    justify-content: center;
+}
+.btn-4 button{
+    background-color:  #E17773;
+    color: 362850;
+    height: 49px;
+    width: 184px;
+    border-radius: 24px;
+    border: none;
+    
 }
 
 /* three box */
@@ -776,22 +831,26 @@ ul{
 
 
 footer{
-    width: 100%;
+    width: 98%;
     height: 800px;
     background: #0f091b;
     background: linear-gradient(to bottom, rgb(1, 12, 0) 45%, rgba(10, 19, 49, 0.94) 95%);
 }
-.logo-b img{
-    height: 47px;
-    width: 155px;  
+
+.logo-b {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .flex-content{
-    color: #848895;
     display: block;
-    justify-content: center;   
+    justify-content: center; 
+    color: #848895;
 }
 .add{
-    width: 200px;  
+    text-align: center;
+    width: 100%;  
 }
 span{
     color: #F2F8F9;
@@ -804,8 +863,12 @@ span{
 .foot p{
    margin-top: 10px;
 }
+.doc{
+    text-align: center;
+}
 .news{
-    width: 280px;
+    text-align: center;
+    width: 100%;
 }
 .news p{
     line-height: 20px;
@@ -815,8 +878,9 @@ span{
     border-radius: 24px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 30px;
-    width: 270px;
+    width: 93%;
     padding-left: 15px;
     margin-top: 40px;   
 }
